@@ -26,7 +26,6 @@ xLabel = array(xLabel)
 plt.xticks(xLabel, xLabel)
 plt.yticks(ylabel, ylabel)
 plt.title('Child rape scenario in Bangladesh in recent years')
-#plt.xlabel('Months', fontsize = 13)
 plt.ylabel('# of child got raped per month', fontsize = 13)
 
 a = -0.26
@@ -34,9 +33,9 @@ for j, i in enumerate(y):
     if(i < 10):
         ax.text(a + .135, 2, str(i), color='white')
     elif(i > 99):
-        ax.text(a - .135, 2, str(i), color='white')        
+        ax.text(a - .18, 2, str(i), color='white')        
     else:
-        ax.text(a + 0.02 , 2, str(i), color='white')
+        ax.text(a, 2, str(i), color='white')
     a = a + 1
 
 plt.show()
